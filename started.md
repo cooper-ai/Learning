@@ -38,4 +38,4 @@ checkpoints/deeplabv3plus_r50-d8_512x1024_40k_cityscapes_20200605_094610-d222ffc
 --eval mIoU
 
 `CPU memory efficient test pspnet on Cityscapes (without saving the test results) and evaluate the mIoU. `
-python tools/test.py configs/pspnet/pspnet_r50-d8_512x1024_40k_cityscapes.py checkpoints/pspnet_r50-d8_512x1024_40k_cityscapes_20200605_094610-d222ffcd.pth --eval-options efficient_test=True --eval mIoU
+python tools/test.py configs/pspnet/pspnet_r50-d8_512x1024_40k_cityscapes.py checkpoints/pspnet_r50-d8_512x1024_40k_cityscapes_20200605_003338-2966598c.pth --eval-options efficient_test=True --eval mIoU
