@@ -20,15 +20,17 @@ ln -s $DATA_ROOT data
 
 `verification`
 
-python demo/image_demo.py demo/demo.png configs/deeplabv3plus/deeplabv3plus_r50-d8_512x1024_40k_cityscapes.py \
+python demo/image_demo.py demo/demo.png configs/deeplabv3plus/deeplabv3plus_r50-d8_512x1024_40k_cityscapes.py 
 
 checkpoints/deeplabv3plus_r50-d8_512x1024_40k_cityscapes_20200605_094610-d222ffcd.pth --device cuda:0 --palette cityscapes
 
+`single GPU training`
+python tools/train.py configs/pspnet/pspnet_r50-d8_512x1024_40k_cityscapes.py --work-dir="work_dir"
+
 `Test PSPNet and visualize the results. Press any key for the next image.`
 
-python tools/test.py configs/pspnet/pspnet_r50-d8_512x1024_40k_cityscapes.py \
-    checkpoints/pspnet_r50-d8_512x1024_40k_cityscapes_20200605_003338-2966598c.pth \
-    --show
+python tools/test.py configs/pspnet/pspnet_r50-d8_512x1024_40k_cityscapes.py 
+checkpoints/pspnet_r50-d8_512x1024_40k_cityscapes_20200605_003338-2966598c.pth --show
 
 `test a datasets with a single GPU`
 python tools/test.py
