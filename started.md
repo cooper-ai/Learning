@@ -45,3 +45,6 @@ checkpoints/deeplabv3plus_r50-d8_512x1024_40k_cityscapes_20200605_094610-d222ffc
 
 `CPU memory efficient test pspnet on Cityscapes (without saving the test results) and evaluate the mIoU. `
 python tools/test.py configs/pspnet/pspnet_r50-d8_512x1024_40k_cityscapes.py checkpoints/pspnet_r50-d8_512x1024_40k_cityscapes_20200605_003338-2966598c.pth --eval-options efficient_test=True --eval mIoU
+
+
+[安装桌面环境并配置VNC] https://cloud.videojj.com/bbs/topic/272/%E5%AE%89%E8%A3%85%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83%E5%B9%B6%E9%85%8D%E7%BD%AEvnc%E8%BF%9E%E6%8E%A5
