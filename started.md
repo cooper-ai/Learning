@@ -33,10 +33,23 @@ python tools/test.py configs/pspnet/pspnet_r50-d8_512x1024_40k_cityscapes.py
 checkpoints/pspnet_r50-d8_512x1024_40k_cityscapes_20200605_003338-2966598c.pth --show
 
 `test a datasets with a single GPU`
+(deeplabv3+)
 python tools/test.py
 configs/deeplabv3plus/deeplabv3plus_r50-d8_512x1024_40k_cityscapes.py
 checkpoints/deeplabv3plus_r50-d8_512x1024_40k_cityscapes_20200605_094610-d222ffcd.pth
 --show-dir deeplabv3plus_r50-d8_512x1024_40k_cityscapes_results
+
+(fcn)
+python tools/test.py
+configs/fcn/fcn_r50-d8_512x1024_40k_cityscapes.py
+checkpoints/fcn_r50-d8_512x1024_40k_cityscapes_20200604_192608-efe53f0d.pth
+--show-dir fcn_r50-d8_512x1024_40k_cityscapes_results
+
+(pspnet)
+python tools/test.py
+configs/pspnet/pspnet_r50-d8_512x1024_40k_cityscapes.py
+checkpoints/pspnet_r50-d8_512x1024_40k_cityscapes_20200605_003338-2966598c.pth
+--show-dir pspnet_r50-d8_512x1024_40k_cityscapes_results
 
 `CPU memory efficient test DeeplabV3+ on Cityscapes (without saving the test results) and evaluate the mIoU.`
 
